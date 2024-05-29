@@ -1,7 +1,7 @@
 const { collection } = require('../lib/system/config')
 exports.routes = {
    category: 'main',
-   path: '/',
+   path: '/docs',
    method: 'get',
    execution: async (req, res, next) => {
       const model = collection.sort(function(a, b) {
