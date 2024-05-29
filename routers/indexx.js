@@ -4,7 +4,7 @@ exports.routes = {
    parameter: '',
    method: 'get',
    execution: async (req, res, next) => {
-      res.sendFile(path.join(__dirname, './index.html'))
+      res.sendFile(require('./index.html'))
    },
    error: false 
 }
